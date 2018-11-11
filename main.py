@@ -18,6 +18,7 @@ def save_config(config):
     config_file = open('config.json', 'w')
     data = json.dumps(config)
     config_file.write(data)
+    config_file.close()
 
 
 
