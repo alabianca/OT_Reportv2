@@ -3,6 +3,7 @@
 from google.gmailApi import GmailApi
 from google.Errors import NoMessagesFoundException
 from pytime import pytime
+import HtmlReader
 import base64
 import json
 
@@ -23,7 +24,7 @@ def save_config(config):
 
 
 def write_to_html_file(html, name):
-    path = "./htmlFiles/{}".format(name)
+    path = "./htmlFilesv2/{}".format(name)
     file = open(path, "w")
     file.write(html)
 
@@ -73,6 +74,10 @@ def main():
         save_config(config)
     except NoMessagesFoundException as e:
         print(e)
+
+    #read an html file now
+    html = HtmlReader.HtmlReader()
+    html.read_all('./htmlFilesv2/*.html')
 
 
 
