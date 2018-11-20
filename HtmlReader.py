@@ -30,6 +30,7 @@ class HtmlReader:
         #wtf
         row = tbody.contents[2].contents[0].contents[0].contents[0].contents[0]
 
+        print(row.contents[2].contents)
         summary = {
             "date": row.contents[1].contents[0].text,
             "time": row.contents[2].contents[0].text,
@@ -50,7 +51,7 @@ class HtmlReader:
 
         cardio = {
             "avg_heart_rate": tbody.contents[1].contents[0].contents[0].text,
-            "peak_heart_rate": tbody.contents[3].contents[0].contents[0].text
+            "peak_heart_rate": tbody.contents[3].contents[0].contents[0].contents[1].string
         }
 
         return cardio
@@ -75,9 +76,15 @@ class HtmlReader:
             summary    = self.get_summary(soup)
             cardio     = self.get_cardio(soup)
 
-            print(this_class)
-            print(summary)
-            print(cardio)
+
+
+            event = {
+                **this_class,
+                **summary,
+                **cardio
+            }
+
+            #print(event)
             file_handle.close()
 
 
