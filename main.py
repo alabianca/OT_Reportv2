@@ -6,6 +6,7 @@ from pytime import pytime
 import HtmlReader
 import base64
 import json
+import sys
 
 
 def get_config():
@@ -47,11 +48,9 @@ def get_last_run_time(timestamp):
 
     return yesterday
 
-def pull_latest_gmail_data(config):
+def pull_gmail_data(query=''):
 
-    last_run = get_last_run_time(config['last_run'])
 
-    query = 'after:{}'.format(last_run)
 
     gmail = GmailApi()
 
@@ -63,17 +62,46 @@ def pull_latest_gmail_data(config):
 
         parse_message(m_res, id)
 
+def do_latest(config):
+    last_run = get_last_run_time(config['last_run'])
+    query = 'after:{}'.format(last_run)
+
+    pull_gmail_data(query)
+
 
 def main():
 
     config = get_config()
+    flags = sys.argv
 
+    pull_latest = False
+
+    #get flags
+    for flag in flags:
+        if flag == '--latest':
+            pull_latest = True
+
+
+    query = ''
+
+    #if we are only pulling the latest data find out when we ran the program last
+    if pull_latest:
+        last_run = get_last_run_time(config['last_run'])
+        query = 'after:{}'.format(last_run)
+
+    #try to find data
     try:
-        pull_latest_gmail_data(config)
+        pull_gmail_data(query)
         config['last_run'] = str(pytime.today())
         save_config(config)
     except NoMessagesFoundException as e:
         print(e)
+
+
+
+
+
+
 
     #read an html file now
     html = HtmlReader.HtmlReader()

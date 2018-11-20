@@ -3,12 +3,47 @@
 from bs4 import BeautifulSoup
 import glob
 
+
+def summary_v1(tbody):
+    # wtf
+    row = tbody.contents[2].contents[0].contents[0].contents[0].contents[0]
+
+    # print(row.contents[2].contents)
+    summary = {
+        "date": row.contents[1].contents[0].text,
+        "time": row.contents[2].contents[0].text,
+        "coach": row.contents[3].contents[0].text,
+        "template_version": 1
+    }
+
+    return summary
+
+def summary_v2(tbody):
+    summary = {}
+    row = tbody.contents[2].contents[0].contents[0].contents[0].contents[0]
+
+    summary["date"] = tbody.contents[0].contents[0].text
+    summary["time"] = row.contents[1].contents[0].text
+    summary["coach"] = row.contents[3].contents[0].text
+    summary["template_version"] = 2
+
+    return summary
+
+def print_summary(total,errors):
+    print("Parsed {} files".format(total))
+    print("Successfully parsed {} files".format(total-errors))
+    print("Errors: {}".format(errors))
+
+
+
 class HtmlReader:
 
     def __init__(self):
-        self.file = './htmlFilesv2/OTReport_166a63095fc16625.html'
+        self.total = 0
+        self.errors = 0
 
     def get_this_class_data(self, summary_table):
+
         row = summary_table.contents[0].contents #tr that contains the THIS CLASS data
 
         this_class = {
@@ -27,17 +62,20 @@ class HtmlReader:
 
         tbody = workout_summary_table.contents[0]
 
-        #wtf
-        row = tbody.contents[2].contents[0].contents[0].contents[0].contents[0]
+        v1_id = tbody.contents[0].contents[0].text
 
-        print(row.contents[2].contents)
-        summary = {
-            "date": row.contents[1].contents[0].text,
-            "time": row.contents[2].contents[0].text,
-            "coach":row.contents[3].contents[0].text
-        }
 
-        return summary
+        # the OT_REPORT template has changed slightly over the past few months
+        # the summary is in different places for each type of template
+
+        if v1_id == 'STUDIO WORKOUT SUMMARY'.upper():
+            return summary_v1(tbody)
+        else:
+            return summary_v2(tbody)
+
+
+
+
 
 
     def get_cardio(self, soup):
@@ -54,6 +92,8 @@ class HtmlReader:
             "peak_heart_rate": tbody.contents[3].contents[0].contents[0].contents[1].string
         }
 
+
+
         return cardio
 
 
@@ -63,6 +103,7 @@ class HtmlReader:
     def read_all(self, directory):
 
         files = glob.glob(directory)
+        self.total = len(files)
 
         for i,fh in enumerate(files):
 
@@ -72,9 +113,16 @@ class HtmlReader:
 
             summary_table = soup.find('tbody', attrs={'class': 'summary-table'})
 
+            if(not summary_table):
+                print("Could not parse {}".format(fh))
+                print("Could not locate summary table")
+
+                self.errors += 1
+                continue
+
             this_class = self.get_this_class_data(summary_table)
-            summary    = self.get_summary(soup)
-            cardio     = self.get_cardio(soup)
+            summary = self.get_summary(soup)
+            cardio = self.get_cardio(soup)
 
 
 
@@ -86,5 +134,7 @@ class HtmlReader:
 
             #print(event)
             file_handle.close()
+
+        print_summary(self.total,self.errors)
 
 
