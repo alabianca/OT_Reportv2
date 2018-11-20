@@ -7,6 +7,7 @@ import HtmlReader
 import base64
 import json
 import sys
+import csv
 
 
 def get_config():
@@ -68,6 +69,26 @@ def do_latest(config):
 
     pull_gmail_data(query)
 
+def write_to_csv(events):
+    with open('events.csv', 'w', newline='') as csvFile:
+        field_names = ['calories', 'splat_pts', 'steps', 'date', 'time', 'coach', 'template_version', 'avg_heart_rate', 'peak_heart_rate']
+        writer = csv.DictWriter(csvFile, fieldnames=field_names)
+
+        writer.writeheader()
+
+        for event in events:
+            writer.writerow({
+                'calories': event['calories'],
+                'splat_pts': event['splat_pts'],
+                'steps': event['steps'],
+                'date': event['date'],
+                'time': event['time'],
+                'coach': event['coach'],
+                'template_version': event['template_version'],
+                'avg_heart_rate': event['avg_heart_rate'],
+                'peak_heart_rate': event['peak_heart_rate']
+            })
+
 
 def main():
 
@@ -105,7 +126,9 @@ def main():
 
     #read an html file now
     html = HtmlReader.HtmlReader()
-    html.read_all('./htmlFilesv2/*.html')
+    events = html.read_all('./htmlFilesv2/*.html')
+
+    write_to_csv(events)
 
 
 

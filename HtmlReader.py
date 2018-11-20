@@ -104,7 +104,7 @@ class HtmlReader:
 
         files = glob.glob(directory)
         self.total = len(files)
-
+        events = []
         for i,fh in enumerate(files):
 
             file_handle = open(fh)
@@ -131,10 +131,10 @@ class HtmlReader:
                 **summary,
                 **cardio
             }
-
-            #print(event)
+            events.append(event)
             file_handle.close()
 
         print_summary(self.total,self.errors)
 
+        return events
 
