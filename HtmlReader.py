@@ -62,8 +62,8 @@ class HtmlReader:
 
         tbody = workout_summary_table.contents[0]
 
-        v1_id = tbody.contents[0].contents[0].text
 
+        v1_id = tbody.contents[0].contents[0].text
 
         # the OT_REPORT template has changed slightly over the past few months
         # the summary is in different places for each type of template
@@ -100,6 +100,13 @@ class HtmlReader:
 
 
 
+    # reads all html files in a given directory and scrapes them
+    # we return the aggregated data as a dictionary called 'event'
+    # an event has the following keys: calories,splat_pts,steps,date,time,coach,template_version,avg_heart_rate,peak_heart_rate
+    # these keys are currently found in 3 different sections
+    #   1. this_class: the THIS CLASS row in the summary table
+    #   2. summary: data about date, time and coach
+    #   3. cardio: max and average heart rate data found in the tiles of the email template
     def read_all(self, directory):
 
         files = glob.glob(directory)
