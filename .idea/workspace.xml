@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bbe5005-15ef-4d5e-b36b-58084d0f70eb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/google/gmailWorker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HtmlReader.py" beforeDir="false" afterPath="$PROJECT_DIR$/HtmlReader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Untitled.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/google/gmailApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/google/gmailApi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlParser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +17,12 @@
     <session id="509307620">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -36,7 +33,7 @@
           <entry key="html" value="13" />
           <entry key="ipynb" value="3" />
           <entry key="json" value="7" />
-          <entry key="py" value="15" />
+          <entry key="py" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -45,7 +42,7 @@
           <entry key="IPNB" value="3" />
           <entry key="JSON" value="7" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="15" />
+          <entry key="Python" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -55,7 +52,7 @@
           <entry key="gitignore" value="45" />
           <entry key="html" value="35" />
           <entry key="json" value="28" />
-          <entry key="py" value="9380" />
+          <entry key="py" value="9406" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -63,14 +60,69 @@
           <entry key="HTML" value="35" />
           <entry key="JSON" value="28" />
           <entry key="PLAIN_TEXT" value="172" />
-          <entry key="Python" value="9380" />
+          <entry key="Python" value="9406" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
+              <folding>
+                <element signature="e#2#38#0" expanded="true" />
+                <marker date="1543452712185" expanded="true" signature="535:749" ph="..." />
+                <marker date="1543452712185" expanded="true" signature="2330:3137" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/HtmlReader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-854">
+              <caret line="38" column="16" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="16" />
+              <folding>
+                <element signature="e#2#31#0" expanded="true" />
+                <marker date="1543381166754" expanded="true" signature="792:941" ph="..." />
+                <marker date="1543381166754" expanded="true" signature="2066:2075" ph="..." />
+                <marker date="1543381166754" expanded="true" signature="2066:3163" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/google/gmailApi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="72" column="10" selection-start-line="72" selection-start-column="10" selection-end-line="72" selection-end-column="10" />
+              <folding>
+                <element signature="e#1#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/google/gmailWorker.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91">
+              <caret line="7" column="14" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+                <marker date="1543379726813" expanded="true" signature="95:100" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -117,9 +169,9 @@
         <option value="$PROJECT_DIR$/.gitattributes" />
         <option value="$PROJECT_DIR$/Untitled.ipynb" />
         <option value="$PROJECT_DIR$/google/gmailWorker.py" />
-        <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/google/gmailApi.py" />
         <option value="$PROJECT_DIR$/HtmlReader.py" />
+        <option value="$PROJECT_DIR$/google/gmailApi.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -200,7 +252,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.19518073" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3927711" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -293,39 +345,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-297">
-          <caret line="95" lean-forward="true" selection-start-line="95" selection-end-line="95" />
-          <folding>
-            <element signature="e#2#38#0" expanded="true" />
-            <marker date="1543380484795" expanded="true" signature="535:749" ph="..." />
-            <marker date="1543380484795" expanded="true" signature="2330:3137" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/google/gmailApi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="40" column="59" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="59" />
-          <folding>
-            <element signature="e#1#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/google/gmailWorker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <marker date="1543379726813" expanded="true" signature="95:100" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/google/secrets.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="13">
@@ -333,10 +352,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/htmlParser.py" />
+    <entry file="file://$PROJECT_DIR$/events.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/HtmlReader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="108" column="91" selection-start-line="108" selection-start-column="91" selection-end-line="108" selection-end-column="91" />
+        <state relative-caret-position="-854">
+          <caret line="38" column="16" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="16" />
           <folding>
             <element signature="e#2#31#0" expanded="true" />
             <marker date="1543381166754" expanded="true" signature="792:941" ph="..." />
@@ -346,17 +373,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/htmlParser.py">
+    <entry file="file://$PROJECT_DIR$/google/gmailWorker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        <state relative-caret-position="91">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <marker date="1543379726813" expanded="true" signature="95:100" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/events.csv">
+    <entry file="file://$PROJECT_DIR$/google/gmailApi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="88" />
+        <state relative-caret-position="356">
+          <caret line="72" column="10" selection-start-line="72" selection-start-column="10" selection-end-line="72" selection-end-column="10" />
+          <folding>
+            <element signature="e#1#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
+          <folding>
+            <element signature="e#2#38#0" expanded="true" />
+            <marker date="1543452712185" expanded="true" signature="535:749" ph="..." />
+            <marker date="1543452712185" expanded="true" signature="2330:3137" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

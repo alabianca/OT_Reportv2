@@ -57,6 +57,9 @@ class GmailApi:
 
         saved_templates = load_already_parsed_message_ids()
 
+        if results['resultSizeEstimate'] == 0:
+            raise Errors.NoMessagesFoundException(userId='me', labelIds=[OT_LABEL_ID], q=query)
+
         # if no query is provided we default to pull all data
         if query == '':
             no_new_messages = False
@@ -67,7 +70,7 @@ class GmailApi:
                 no_new_messages = False
 
         # if no new messages are found in any case raise error to catch accordingly
-        if results['resultSizeEstimate'] == 0 or no_new_messages:
+        if no_new_messages:
             raise Errors.NoMessagesFoundException(userId='me', labelIds=[OT_LABEL_ID], q=query)
 
         log_msg = "Found {} new OT Email(s).".format(len(results["messages"]))
