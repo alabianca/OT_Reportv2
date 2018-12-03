@@ -2,10 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bbe5005-15ef-4d5e-b36b-58084d0f70eb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Untitled.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Untitled.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/google/gmailApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/google/gmailApi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events.csv" beforeDir="false" afterPath="$PROJECT_DIR$/events.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_16511d853a740a29.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_16615fe59da5f3b5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_166201419f0b94fc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_1662f82bcc33e1ac.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_1663c44d30533ae3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_1664456694bd8daf.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_1664fe4bcb46d532.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_16653d14abf0d92e.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_1665e17e927551ac.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_1666863ecf0da34b.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_16677a053c8e521f.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_1668228820c69dbd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_166a63095fc16625.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_166b07d1ce2256f7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_166cf633c49dfdcc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_166dad085b4e6338.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_166dfaa1f0c9d1e9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_166dfaa280be041b.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_166e959f642d5761.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_166f3a6bbbdd8f13.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_166f8cd2c456a577.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_16703b69c87c2842.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_1670840204144c10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_167128cc439a2ffe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_1671cd98636e10cc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_16727c42294797b8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_167317313c621695.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlFilesv2/OTReport_16736985ad209f9a.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,12 +54,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="2" />
+          <entry key="csv" value="3" />
           <entry key="gitattributes" value="2" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="13" />
           <entry key="ipynb" value="3" />
-          <entry key="json" value="7" />
+          <entry key="json" value="8" />
           <entry key="py" value="19" />
         </counts>
       </usages-collector>
@@ -40,8 +67,8 @@
         <counts>
           <entry key="HTML" value="13" />
           <entry key="IPNB" value="3" />
-          <entry key="JSON" value="7" />
-          <entry key="PLAIN_TEXT" value="5" />
+          <entry key="JSON" value="8" />
+          <entry key="PLAIN_TEXT" value="6" />
           <entry key="Python" value="19" />
         </counts>
       </usages-collector>
@@ -67,57 +94,12 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.py">
+        <entry file="file://$PROJECT_DIR$/events.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
-              <folding>
-                <element signature="e#2#38#0" expanded="true" />
-                <marker date="1543452712185" expanded="true" signature="535:749" ph="..." />
-                <marker date="1543452712185" expanded="true" signature="2330:3137" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HtmlReader.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-854">
-              <caret line="38" column="16" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="16" />
-              <folding>
-                <element signature="e#2#31#0" expanded="true" />
-                <marker date="1543381166754" expanded="true" signature="792:941" ph="..." />
-                <marker date="1543381166754" expanded="true" signature="2066:2075" ph="..." />
-                <marker date="1543381166754" expanded="true" signature="2066:3163" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/google/gmailApi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="72" column="10" selection-start-line="72" selection-start-column="10" selection-end-line="72" selection-end-column="10" />
-              <folding>
-                <element signature="e#1#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/google/gmailWorker.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="7" column="14" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-                <marker date="1543379726813" expanded="true" signature="95:100" ph="..." />
-              </folding>
+            <state>
+              <caret selection-end-column="88" />
             </state>
           </provider>
         </entry>
@@ -139,7 +121,6 @@
       <find>body</find>
       <find>&lt;table</find>
       <find>class=&quot;text-white</find>
-      <find>class=&quot;text-white</find>
       <find>class=text</find>
       <find>class=text-white</find>
       <find>class=&quot;inner-table</find>
@@ -149,6 +130,7 @@
       <find>THIS CLASS</find>
       <find>bg-gradient-red-orange</find>
       <find>splats-bottom</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -267,7 +249,7 @@
     <entry file="file://$PROJECT_DIR$/google/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
-          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="41" selection-end-line="2" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -276,9 +258,6 @@
     <entry file="file://$PROJECT_DIR$/htmlFiles/OTReport_5.html" />
     <entry file="file://$PROJECT_DIR$/htmlFiles/OTReport_0.html" />
     <entry file="file://$PROJECT_DIR$/htmlFiles/OTReport_1.html" />
-    <entry file="file://$PROJECT_DIR$/token.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.html" />
     <entry file="file://$PROJECT_DIR$/google/Errors.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -300,13 +279,7 @@
     <entry file="file://$PROJECT_DIR$/htmlFiles/OTReport_16703b69c87c2842.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/htmlFilesv2/OTReport_166a63095fc16625.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="37189" selection-start-column="37176" selection-end-column="37189" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/htmlFilesv2/OTReport_166a63095fc16625.html" />
     <entry file="file://$PROJECT_DIR$/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -335,9 +308,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/htmlFilesv2/OTReport_16511d853a740a29.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/htmlFilesv2/OTReport_16511d853a740a29.html" />
     <entry file="file://$PROJECT_DIR$/Untitled.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -353,16 +324,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/htmlParser.py" />
-    <entry file="file://$PROJECT_DIR$/events.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HtmlReader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-854">
+        <state relative-caret-position="481">
           <caret line="38" column="16" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="16" />
           <folding>
             <element signature="e#2#31#0" expanded="true" />
@@ -386,8 +350,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/google/gmailApi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="72" column="10" selection-start-line="72" selection-start-column="10" selection-end-line="72" selection-end-column="10" />
+        <state relative-caret-position="225">
+          <caret line="76" column="13" selection-start-line="76" selection-start-column="8" selection-end-line="76" selection-end-column="13" />
           <folding>
             <element signature="e#1#38#0" expanded="true" />
           </folding>
@@ -396,13 +360,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="72" column="20" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
+        <state relative-caret-position="135">
+          <caret line="67" column="19" selection-start-line="67" selection-start-column="19" selection-end-line="67" selection-end-column="19" />
           <folding>
             <element signature="e#2#38#0" expanded="true" />
-            <marker date="1543452712185" expanded="true" signature="535:749" ph="..." />
-            <marker date="1543452712185" expanded="true" signature="2330:3137" ph="..." />
+            <marker date="1543548730176" expanded="true" signature="535:749" ph="..." />
+            <marker date="1543548730176" expanded="true" signature="2330:3137" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/token.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/events.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="88" />
         </state>
       </provider>
     </entry>
